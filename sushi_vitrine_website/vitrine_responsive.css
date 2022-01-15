@@ -1,0 +1,90 @@
+@media (max-width: 60em){
+    
+    label #btn {
+        display: block;
+        font-size: 2em;
+    }
+
+    label #cancel { 
+        font-size: 2em;
+    }
+    nav {
+        width: 100%;
+    }
+
+    nav ul{
+        position: fixed;
+        width: 50%;
+        height: 100%;
+        background-color: #FF7C54;
+        left: -100%;
+        text-align: center;
+        transition: 0.5s;
+        z-index: 20;
+    }
+    nav ul li{
+       display: block;
+        margin: 40px 0;
+        line-height: auto;
+        align-content: center;
+        justify-content: center; 
+        justify-items: center;
+    }
+
+    nav ul li a:hover{
+        color: #0d0d0d;
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+    #check:checked ~ label #btn{
+        display: none;
+    }
+    #check:checked ~ label #cancel{
+        display: block;
+    }
+
+    section {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        display: block;
+        margin-bottom: 10%;
+    }
+
+    .home {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .image img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h2 {
+        margin-top: 0.5em;
+    }
+
+    .image_home{
+        width: 100%;
+        height: 100vh;
+    }
+    
+}
+
+
+
+
+
+
+@media (max-width: 50em){
+
+.image img{
+        width: 100%;
+    }
+
+}

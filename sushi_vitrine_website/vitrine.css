@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #0D0D0D;
+}
+
+
+/* Pour faciliter mon code je defini a des balises natifs (je sais pas si ca se dit argh) des couleurs et/ ou leurs tailles */
+
+h1 {
+    font-size: 3.2em;
+    color: #FF7C54;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h2 {
+    color: #FF7C54;
+    font-size: 2em;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+p {
+    font-size: 1em;
+    font-family: 'Quicksand', sans-serif;
+    color: #F2F2F2;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*navigation */
+nav {
+    margin-top: 0px;
+    height: 80px;
+    background-color: #0D0D0D;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    scroll-behavior: smooth;
+}
+
+nav img {
+    width: 75px;
+    position: absolute;
+    left: 5%;
+    margin-top: 5px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 5%; 
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+}
+
+nav ul li a{
+    position: relative;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+nav ul li a:hover{
+    color: #FF7C54;
+    transition: ease-in-out 0.5s;
+}
+
+
+label #btn,
+label #cancel {
+    position: relative;
+    color: white;
+    font-size: 2em;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+
+/*nigiri sushi*/
+
+section {
+    width: 90%;
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: space-between;
+    margin-bottom: 200px;
+
+}
+
+.home {
+    width: 95%;
+    margin-right: 0;
+    height: 100vh;
+}
+
+.texte_sushi {
+    flex-basis: 35%;
+    vertical-align: middle;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.texte {
+    flex-basis: 35%;
+    vertical-align: middle;
+}
+
+
+
+
+
+.image_home{
+    flex-basis: 55%;
+    vertical-align: middle;
+    justify-content: space-evenly;
+    background-image: url("https://fr.web.img2.acsta.net/pictures/19/09/11/13/43/4503509.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0px 3px 6px #000000;
+}
+
+.image{
+    flex-basis: 50%;
+    display: flex;
+    vertical-align: middle;
+    position: relative;
+}
+
+.image img{
+    width: auto;
+    height: 300px;
+    vertical-align: middle;
+    border-radius: 20px;
+    box-shadow: 0px 3px 6px #000000;
+}
+
+.bouton p,
+.bouton_maki {
+    width: fit-content;
+    padding: 20px 40px;
+    background-color: #FF7C54;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 2em;
+    margin-right: auto;
+    margin-left: auto;
+    color: #F2F2F2;
+}
+
+.bouton p:hover,
+.bouton_maki:hover{
+    background-color: #81C76B;
+    transition: ease-in-out 0.7s;
+    color: #0D0D0D;
+}
+
+.bouton_maki p:hover{
+    color: #0D0D0D;
+}
+.maki {
+    flex-direction: row-reverse;
+}
+
+/*footer*/
+
+footer {
+    width: 100%;
+    background-color: #FF7C54;
+    padding: 20px 0px;
+    text-align: center;
+}

@@ -1,0 +1,88 @@
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fiche CSS-->
+     <link rel="stylesheet" href="vitrine.css">
+    <link rel="stylesheet" href="vitrine_responsive.css">
+   <!--<link rel="stylesheet" href="test.css">-->
+    <!--Favicon-->
+    <link rel="icon" href="images/SVG/logo.svg" />
+    <!--Font awesome c'est pour les icones. Ici je m'en sers pour le mode responsive 'menu burger' et la croix pour fermer le bouton-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- La police -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <!--Animate on Scroll "AOS", j'ai ajouter en bas vers le footer 
+    les script //sinon les animations ne marcherai pas 
+    -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Sushi</title>
+</head>
+
+<body>
+
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fa fa-bars" id="btn"></i>
+            <i class="fa fa-times" id="cancel"></i>
+        </label>
+
+        <a  href="#accueil"><img src="images/SVG/logo.svg"> </a>
+        <ul>
+            <li> <a href="#nigiri"> Nigiri Sushi</a></li>
+            <li> <a href="#maki"> Maki Sushi</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home-->
+    <section class="home" id="accueil">
+            <div class="texte_sushi" data-aos="fade-up">
+                <h1>Sushi</h1> <br>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, excepturi ipsum. Laudantium porro vel aspernatur sit ullam iste, laboriosam, vitae officia, fugiat excepturi hic? Dicta nam incidunt laudantium necessitatibus voluptate!</p>
+            </div>
+            <div class="image_home"></div>
+    </section>
+
+           
+<!--Nigiri Sushi-->
+<section id="nigiri">
+    <div class="image" data-aos="fade-up">
+        <img src="https://fr.techtribune.net/wp-content/uploads/2020/11/Gintama-movie.jpg" alt="">
+    </div>
+    <div class="texte" data-aos="fade-right">
+        <h2> Nigiri Sushi</h2>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam necessitatibus molestiae esse magni consectetur? Corrupti quibusdam hic molestias porro accusantium magnam itaque, iure eos, saepe voluptates, quam omnis laborum nisi.</p>
+        <div class="bouton">
+            <a href=""> <p> Aller sur Nigiri Sushi</p></a>
+        </div>
+    </div>
+</section>
+
+<!--Maki Sushi-->
+<section class="maki" id="maki">
+    <div class="image" data-aos="fade-up">
+        <img src="https://fr.techtribune.net/wp-content/uploads/2020/11/Gintama-movie.jpg" alt="">
+    </div>
+    <div class="texte" data-aos="fade-left">
+        <h2> Maki Sushi</h2>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam necessitatibus molestiae esse magni consectetur? Corrupti quibusdam hic molestias porro accusantium magnam itaque, iure eos, saepe voluptates, quam omnis laborum nisi.</p>
+        <div class="bouton_maki">
+            <a href=""><p> Aller sur Maki Sushi</p></a>
+        </div>
+    </div>
+</section>
+
+
+<footer> <p> Developpé par Amélie Court et Soraya Gherras</p></footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
+
